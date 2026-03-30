@@ -1,0 +1,31 @@
+# Virtual Environments
+*-env/
+venv/
+.venv/
+env/
+
+# Python Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# Jac/Jaseci Caches
+.jac_cache/
+.jaseci/
+.jac
+
+# Project Specific
+reports/
+chats-history/
+jac-diagnostics/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
