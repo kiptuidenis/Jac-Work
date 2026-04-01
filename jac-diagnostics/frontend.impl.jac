@@ -59,5 +59,4 @@ impl app.handleAiAsk -> None {
 
 impl app.handleTransportChange(e: any) -> None {
     transport = e.target.value;
-    root spawn update_settings(transport=transport);
 }

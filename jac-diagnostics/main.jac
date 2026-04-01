@@ -29,11 +29,6 @@ def mcp_get_example(name: str) -> dict {
     return call_tool(mcp, "get_example", {"name": name});
 }
 
-node DiagnosticsMetadata {
-    has transport: str = "stdio";
-    has last_check: str = "";
-}
-
 walker:pub validate_code {
     has code: str;
     has transport: str = "stdio";
@@ -60,19 +55,6 @@ walker:pub validate_code {
         };
 
         report res;
-    }
-}
-
-walker:pub update_settings {
-    has transport: str;
-
-    can update with Root entry {
-        meta = [-->DiagnosticsMetadata];
-        if len(meta) > 0 {
-            meta[0].transport = self.transport;
-        } else {
-            here ++> DiagnosticsMetadata(transport=self.transport);
-        }
     }
 }
 

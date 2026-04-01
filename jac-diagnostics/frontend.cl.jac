@@ -6,7 +6,6 @@ Reactive UI for the diagnostic dashboard.
 sv import from backend { 
     validate_code, 
     run_stress_suite, 
-    update_settings, 
     test_all_tools,
     ai_ask
 }
