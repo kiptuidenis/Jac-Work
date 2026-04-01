@@ -192,11 +192,15 @@ obj McpClient {
             }
 
             body = response.text;
+            if response.status_code >= 400 {
+                return {"error": f"HTTP {response.status_code}: {body}"};
+            }
+            
             if not body.strip() {
                 if is_notification {
                     return {"success": True};
                 }
-                return {"error": f"Empty response or error. Status: {response.status_code}"};
+                return {"error": f"Empty response. Status: {response.status_code}"};
             }
 
             return response.json();
