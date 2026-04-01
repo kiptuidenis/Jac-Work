@@ -22,7 +22,6 @@ build/
 # Project Specific
 reports/
 chats-history/
-jac-diagnostics/
 
 # Editor/OS
 .vscode/
