@@ -1,0 +1,8 @@
+[ERROR] Error: error[E0002]: Missing ';'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_06_identifiers.jac:9:6
+    7 | 
+    8 | with entry {
+    9 |     1invalid_var = 10;
+      |      ^^^^^^^^^^^
+   10 |     
+   11 |     # Trying to mutate an internal reference

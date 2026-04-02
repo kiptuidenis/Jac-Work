@@ -1,0 +1,8 @@
+[ERROR] Error: error[E0101]: Unterminated block comment
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_02_comments.jac:1:1
+    1 | #* 
+      | ^^^
+    2 | This is a multi-line comment that will intentionally 
+    3 | never be closed with an asterisk-hash.
+    4 | This should trigger an End Of File (EOF) parsing error.
+    5 | 

@@ -1,0 +1,16 @@
+[ERROR] Error: error[E0004]: Unexpected token in expression: ';'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_02_type_annotations.jac:10:27
+    8 |     # 2. Mandatory Violation (Partial): Using any where specific was expected?
+    9 |     # No, 'any' is valid. Let's try malformed annotation logic.
+   10 |     has data: list[int] | ; # Incomplete union
+      |                           ^
+   11 | }
+   12 | 
+[ERROR] Error: error[E0002]: Missing ';'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_02_type_annotations.jac:11:1
+    9 |     # No, 'any' is valid. Let's try malformed annotation logic.
+   10 |     has data: list[int] | ; # Incomplete union
+   11 | }
+      | ^
+   12 | 
+   13 | def greet(name: str) {

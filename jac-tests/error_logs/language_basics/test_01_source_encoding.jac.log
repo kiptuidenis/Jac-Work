@@ -1,0 +1,56 @@
+[ERROR] Error: error[E0105]: Unexpected character: '$'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:2:1
+    1 | # Intentionally injecting a random unrecognized operator/symbol to test the lexer
+    2 | $invalid_symbol = 42;
+      | ^
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+[ERROR] Error: error[E0105]: Unexpected character: '$'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:5:11
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+      |           ^
+    6 | }
+    7 | 
+[ERROR] Error: error[E0005]: Unexpected token '$'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:2:1
+    1 | # Intentionally injecting a random unrecognized operator/symbol to test the lexer
+    2 | $invalid_symbol = 42;
+      | ^
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+[ERROR] Error: error[E0030]: Unexpected semicolon at module level
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:2:21
+    1 | # Intentionally injecting a random unrecognized operator/symbol to test the lexer
+    2 | $invalid_symbol = 42;
+      |                     ^
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+[ERROR] Error: error[E0004]: Unexpected token in expression: 'ERROR'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:5:11
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+      |           ^
+    6 | }
+    7 | 
+[ERROR] Error: error[E0002]: Missing ','
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:5:12
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+      |            ^^^^^^^^^^^^^^
+    6 | }
+    7 | 
+[ERROR] Error: error[E0006]: Unexpected token
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_01_source_encoding.jac:5:12
+    3 | 
+    4 | with entry {
+    5 |     print($invalid_symbol);
+      |            ^^^^^^^^^^^^^^
+    6 | }
+    7 | 

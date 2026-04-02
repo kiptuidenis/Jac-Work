@@ -1,0 +1,14 @@
+[ERROR] Error: error[E0001]: Expected '{', got '='
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_04_code_blocks.jac:3:15
+    1 | # Jac uses braces { } for code blocks. We will test Python's indentation style.
+    2 | with entry:
+    3 |     condition = True;
+      |               ^
+    4 |     if condition {
+    5 |         print("This should throw a ParseError expecting {");
+[ERROR] Error: error[E0002]: Missing '}'
+  --> /home/denis/Jaseci/jac-tests/language_basics/test_04_code_blocks.jac:6:6
+    4 |     if condition {
+    5 |         print("This should throw a ParseError expecting {");
+    6 |     }
+      |      ^

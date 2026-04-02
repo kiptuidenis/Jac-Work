@@ -1,0 +1,24 @@
+[ERROR] Error: error[E0005]: Unexpected token 'has'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_03_generics.jac:11:1
+    9 | # 2. Constraint Break: Providing incorrect number of type arguments to dict
+   10 | # dict expects [Key, Value]
+   11 | has mapping: dict[int] = {};
+      | ^^^
+   12 | 
+   13 | with entry {
+[ERROR] Error: error[E0005]: Unexpected token '}'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_03_generics.jac:11:27
+    9 | # 2. Constraint Break: Providing incorrect number of type arguments to dict
+   10 | # dict expects [Key, Value]
+   11 | has mapping: dict[int] = {};
+      |                           ^
+   12 | 
+   13 | with entry {
+[ERROR] Error: error[E0030]: Unexpected semicolon at module level
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_03_generics.jac:11:28
+    9 | # 2. Constraint Break: Providing incorrect number of type arguments to dict
+   10 | # dict expects [Key, Value]
+   11 | has mapping: dict[int] = {};
+      |                            ^
+   12 | 
+   13 | with entry {

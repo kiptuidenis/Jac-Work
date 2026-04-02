@@ -1,0 +1,48 @@
+[ERROR] Error: error[E0004]: Unexpected token in expression: '|'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:10:25
+    8 | }
+    9 | 
+   10 | def process(data: int | | str) {
+      |                         ^
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+[ERROR] Error: error[E0002]: Missing ')'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:10:27
+    8 | }
+    9 | 
+   10 | def process(data: int | | str) {
+      |                           ^^^
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+[ERROR] Error: error[E0002]: Missing ';'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:10:27
+    8 | }
+    9 | 
+   10 | def process(data: int | | str) {
+      |                           ^^^
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+[ERROR] Error: error[E0005]: Unexpected token 'str'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:10:27
+    8 | }
+    9 | 
+   10 | def process(data: int | | str) {
+      |                           ^^^
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+[ERROR] Error: error[E0030]: Unexpected semicolon at module level
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:12:16
+   10 | def process(data: int | | str) {
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+      |                ^
+   13 | }
+   14 | 
+[ERROR] Error: error[E0005]: Unexpected token '}'
+  --> /home/denis/Jaseci/jac-tests/types_and_values/test_05_union_types.jac:13:1
+   11 |     # 2. Incomplete union or illegal separator
+   12 |     print(data);
+   13 | }
+      | ^
+   14 | 
+   15 | with entry {
