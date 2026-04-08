@@ -1,0 +1,8 @@
+✖ Error: error[E5043]: Bytecode compilation failed: can't use starred expression here (test_01_basic_ops.jac, line 5)
+  --> /home/denis/Jaseci/jac-tests/operators/test_01_basic_ops.jac:3:1
+    1 | # Test 01: Basic and Assignment Operators
+    2 | 
+    3 | with entry {
+      | ^^^^^^^^^^^^
+    4 |     # 1. Invalid operator chaining
+    5 |     a = 5 +* 10; # Error: Syntax error

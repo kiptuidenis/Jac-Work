@@ -1,0 +1,6 @@
+✖ Error: Error: The 'by' operator is not yet implemented. This feature is reserved for future use.
+
+  ... [internal runtime calls]
+  at example() /home/denis/Jaseci/jac-tests/operators/test_by_operator.jac:3
+  at <module> /home/denis/Jaseci/jac-tests/operators/test_by_operator.jac:16
+  ... [internal runtime calls]

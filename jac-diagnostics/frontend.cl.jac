@@ -64,8 +64,37 @@ def:pub app -> any {
     # 2. Inventory Section
     invView = <div></div>;
     if inventoryResult.status {
-        invView = <div style={{"marginTop": "1rem", "fontSize": "0.875rem", "color": "#166534", "padding": "0.5rem", "backgroundColor": "#f0fdf4", "borderRadius": "0.25rem"}}>
-            Inventory Check: Verified.
+        items = [];
+        if "results" in inventoryResult {
+            for resItem in inventoryResult.results {
+                name = resItem["name"];
+                resData = resItem["res"];
+                has_err = "error" in resData;
+                
+                statusColor = "#ef4444" if has_err else "#10b981";
+                badgeText = "FAILED" if has_err else "PASSED";
+                bgCol = "#fef2f2" if has_err else "#ecfdf5";
+                
+                items.append(
+                    <div style={{
+                        "display": "flex", "justifyContent": "space-between", "alignItems": "center",
+                        "padding": "0.75rem", "borderBottom": "1px solid #e2e8f0", 
+                        "backgroundColor": bgCol, "borderRadius": "0.375rem", "marginBottom": "0.5rem"
+                    }}>
+                        <span style={{"fontWeight": "600", "color": "#334155", "fontFamily": "monospace"}}>{name}</span>
+                        <span style={{"fontSize": "0.75rem", "fontWeight": "700", "color": statusColor, "padding": "0.25rem 0.5rem", "borderRadius": "9999px", "border": f"1px solid {statusColor}"}}>
+                            {badgeText}
+                        </span>
+                    </div>
+                );
+            }
+        }
+        
+        invView = <div style={{"marginTop": "1.5rem"}}>
+            <h3 style={{"fontSize": "1rem", "fontWeight": "700", "marginBottom": "1rem", "color": "#1e293b"}}>Endpoint Diagnostics</h3>
+            <div style={{"maxHeight": "24rem", "overflowY": "auto", "paddingRight": "0.5rem"}}>
+                {items}
+            </div>
         </div>;
     }
 
@@ -170,8 +199,9 @@ def:pub app -> any {
                                     "cursor": "pointer"
                                 }}
                                 onClick={handleRunInventory}
+                                disabled={loading}
                             >
-                                Test All 9 Tools
+                                { "Testing Ecosystem..." if loading else "Test All 17 Tools" }
                             </button>
                             <button 
                                 style={{

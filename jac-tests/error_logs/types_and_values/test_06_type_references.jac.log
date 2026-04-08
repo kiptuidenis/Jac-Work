@@ -1,4 +1,4 @@
-[ERROR] Error: error[E0004]: Unexpected token in expression: ';'
+✖ Error: error[E0004]: Unexpected token in expression: ';'
   --> /home/denis/Jaseci/jac-tests/types_and_values/test_06_type_references.jac:17:32
    15 |         
    16 |         # Missing closing bracket or colon
@@ -6,7 +6,7 @@
       |                                ^
    18 |         print(p);
    19 |     }
-[ERROR] Error: error[E0002]: Missing ']'
+✖ Error: error[E0002]: Missing ']'
   --> /home/denis/Jaseci/jac-tests/types_and_values/test_06_type_references.jac:18:9
    16 |         # Missing closing bracket or colon
    17 |         p = [ --> ] [?: Person ; 
@@ -14,7 +14,7 @@
       |         ^^^^^
    19 |     }
    20 | }
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/types_and_values/test_06_type_references.jac:18:9
    16 |         # Missing closing bracket or colon
    17 |         p = [ --> ] [?: Person ; 

@@ -1,4 +1,4 @@
-[ERROR] Error: error[E0101]: Unterminated block comment
+✖ Error: error[E0101]: Unterminated block comment
   --> /home/denis/Jaseci/jac-tests/language_basics/test_02_comments.jac:1:1
     1 | #* 
       | ^^^

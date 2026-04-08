@@ -1,0 +1,3 @@
+5 |> double + 1 failed: unsupported operand type(s) for +: 'function' and 'int'
+10 * 2 |> double = 40
+True or False |> to_str = True

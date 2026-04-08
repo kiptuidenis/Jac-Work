@@ -17,4 +17,7 @@ obj Node {
 
 with entry {
     n = Node();
+    print(type(n));
+    n.set_value(10);
+    print(n.value);
 }

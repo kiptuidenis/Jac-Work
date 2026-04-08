@@ -1,0 +1,2 @@
+Empty list is NOT False (expected identity-wise)
+Empty list is falsy (expected)

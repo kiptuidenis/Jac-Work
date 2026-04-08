@@ -1,0 +1,48 @@
+✖ Error: error[E0002]: Missing '}'
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:11:25
+    9 |             
+   10 |         case 1: {
+   11 |             print("One"); # Error: Braces are NOT allowed in match/case bodies
+      |                         ^
+   12 |         }
+   13 |         
+✖ Error: error[E0032]: Unexpected 'case' -- must follow its parent statement (if/try/match/switch)
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:15:9
+   13 |         
+   14 |         # 2. Pattern Shape Misalignment
+   15 |         case [x, y] if x > 0:
+      |         ^^^^
+   16 |             print(f"Positive pair: {x}, {y}");
+   17 |             
+✖ Error: error[E0001]: Expected 'else', got ':'
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:15:29
+   13 |         
+   14 |         # 2. Pattern Shape Misalignment
+   15 |         case [x, y] if x > 0:
+      |                             ^
+   16 |             print(f"Positive pair: {x}, {y}");
+   17 |             
+✖ Error: error[E0032]: Unexpected 'case' -- must follow its parent statement (if/try/match/switch)
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:18:9
+   16 |             print(f"Positive pair: {x}, {y}");
+   17 |             
+   18 |         case Point(a=x, b=y): # Error: Point has fields x and y, not a and b
+      |         ^^^^
+   19 |             print(f"Point: {x}, {y}");
+   20 |     }
+✖ Error: error[E0005]: Unexpected token '}'
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:21:1
+   19 |             print(f"Point: {x}, {y}");
+   20 |     }
+   21 | }
+      | ^
+   22 | 
+   23 | with entry {
+✖ Error: error[E2008]: Invalid target for context update: FuncCall
+  --> /home/denis/Jaseci/jac-tests/control_flow/test_02_pattern_matching.jac:18:14
+   16 |             print(f"Positive pair: {x}, {y}");
+   17 |             
+   18 |         case Point(a=x, b=y): # Error: Point has fields x and y, not a and b
+      |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   19 |             print(f"Point: {x}, {y}");
+   20 |     }

@@ -1,0 +1,11 @@
+✖ Error: Error: 'int' object has no attribute 'value'
+   22 |     # 4. ? in filter comprehensions
+   23 |     items = [1, -5, 10];
+   24 |     results = items[? value > 0]; # Error: 'int' has no field 'value'
+      |                       ^^^^^^^^^
+   25 | }
+   26 | 
+  at <lambda> /home/denis/Jaseci/jac-tests/operators/test_02_null_safe.jac:24
+  ... [internal runtime calls]
+  at <module> /home/denis/Jaseci/jac-tests/operators/test_02_null_safe.jac:24
+  ... [internal runtime calls]

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-TEST_DIRS=("language_basics" "types_and_values")
+TEST_DIRS=("language_basics" "types_and_values" "variables_and_scope" "operators" "control_flow")
 BASE_LOG_DIR="error_logs"
 
 echo "======================================"

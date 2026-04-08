@@ -1,4 +1,4 @@
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_03_statements_and_expressions.jac:4:5
     2 | with entry {
     3 |     x = 5
@@ -6,7 +6,7 @@
       |     ^
     5 |     print(x + y)
     6 | }
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_03_statements_and_expressions.jac:5:5
     3 |     x = 5
     4 |     y = 10
@@ -14,7 +14,7 @@
       |     ^^^^^
     6 | }
     7 | 
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_03_statements_and_expressions.jac:6:1
     4 |     y = 10
     5 |     print(x + y)

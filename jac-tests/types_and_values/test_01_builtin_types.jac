@@ -12,7 +12,7 @@ with entry {
 
     # 3. Type violation (Assignment of wrong type)
     x: int = "This is a string";
-    print(x);
+    print(x / 5);
 
     # 4. Native types in standard jac (Should fail or warn)
     y: i8 = 127;

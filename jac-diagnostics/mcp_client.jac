@@ -15,7 +15,7 @@ obj McpClient {
     has url: str = "http://127.0.0.1:3001/mcp/";
     has timeout: int = 30;
     has _id_counter: int = 1;
-    has _session_id: str = None;
+    has _session_id: str | None = None;
     has _initialized: bool = False;
 
     """Send a request via the configured transport."""

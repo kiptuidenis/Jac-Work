@@ -1,0 +1,40 @@
+✖ Error: error[E0004]: Unexpected token in expression: '>'
+  --> /home/denis/Jaseci/jac-tests/operators/test_07_parser_panics.jac:12:9
+   10 |     # 1. Unbalanced Typed Connection (Missing second +>)
+   11 |     # This was the original panic trigger
+   12 |     n1 +> :Friend: n2; 
+      |         ^
+   13 | 
+   14 |     # 2. Unclosed Edge Attribute Parens
+✖ Error: error[E0002]: Missing ';'
+  --> /home/denis/Jaseci/jac-tests/operators/test_07_parser_panics.jac:12:18
+   10 |     # 1. Unbalanced Typed Connection (Missing second +>)
+   11 |     # This was the original panic trigger
+   12 |     n1 +> :Friend: n2; 
+      |                  ^
+   13 | 
+   14 |     # 2. Unclosed Edge Attribute Parens
+✖ Error: error[E0004]: Unexpected token in expression: ':'
+  --> /home/denis/Jaseci/jac-tests/operators/test_07_parser_panics.jac:12:18
+   10 |     # 1. Unbalanced Typed Connection (Missing second +>)
+   11 |     # This was the original panic trigger
+   12 |     n1 +> :Friend: n2; 
+      |                  ^
+   13 | 
+   14 |     # 2. Unclosed Edge Attribute Parens
+✖ Error: error[E0002]: Missing ';'
+  --> /home/denis/Jaseci/jac-tests/operators/test_07_parser_panics.jac:12:20
+   10 |     # 1. Unbalanced Typed Connection (Missing second +>)
+   11 |     # This was the original panic trigger
+   12 |     n1 +> :Friend: n2; 
+      |                    ^^
+   13 | 
+   14 |     # 2. Unclosed Edge Attribute Parens
+✖ Error: error[E2008]: Invalid target for context update: BinaryExpr
+  --> /home/denis/Jaseci/jac-tests/operators/test_07_parser_panics.jac:12:5
+   10 |     # 1. Unbalanced Typed Connection (Missing second +>)
+   11 |     # This was the original panic trigger
+   12 |     n1 +> :Friend: n2; 
+      |     ^^^^^^^^^^^^^
+   13 | 
+   14 |     # 2. Unclosed Edge Attribute Parens

@@ -1,4 +1,4 @@
-[ERROR] Error: error[E0003]: Expected identifier, got '='
+✖ Error: error[E0003]: Expected identifier, got '='
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:3:10
     1 | # Intentionally attempting to use reserved structural and control keywords as identifiers
     2 | with entry {
@@ -6,7 +6,7 @@
       |          ^
     4 |     spawn = 42;
     5 |     if = True;
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:3:10
     1 | # Intentionally attempting to use reserved structural and control keywords as identifiers
     2 | with entry {
@@ -14,7 +14,7 @@
       |          ^
     4 |     spawn = 42;
     5 |     if = True;
-[ERROR] Error: error[E0004]: Unexpected token in expression: '='
+✖ Error: error[E0004]: Unexpected token in expression: '='
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:3:10
     1 | # Intentionally attempting to use reserved structural and control keywords as identifiers
     2 | with entry {
@@ -22,7 +22,7 @@
       |          ^
     4 |     spawn = 42;
     5 |     if = True;
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:3:12
     1 | # Intentionally attempting to use reserved structural and control keywords as identifiers
     2 | with entry {
@@ -30,7 +30,7 @@
       |            ^^^^^^^^^^^^^^^^
     4 |     spawn = 42;
     5 |     if = True;
-[ERROR] Error: error[E0004]: Unexpected token in expression: '='
+✖ Error: error[E0004]: Unexpected token in expression: '='
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:4:11
     2 | with entry {
     3 |     node = "This is a node";
@@ -38,7 +38,7 @@
       |           ^
     5 |     if = True;
     6 |     
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:4:13
     2 | with entry {
     3 |     node = "This is a node";
@@ -46,7 +46,7 @@
       |             ^^
     5 |     if = True;
     6 |     
-[ERROR] Error: error[E0004]: Unexpected token in expression: '='
+✖ Error: error[E0004]: Unexpected token in expression: '='
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:5:8
     3 |     node = "This is a node";
     4 |     spawn = 42;
@@ -54,7 +54,7 @@
       |        ^
     6 |     
     7 |     print(node, spawn, if);
-[ERROR] Error: error[E0001]: Expected '{', got 'BOOL'
+✖ Error: error[E0001]: Expected '{', got 'BOOL'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:5:10
     3 |     node = "This is a node";
     4 |     spawn = 42;
@@ -62,7 +62,7 @@
       |          ^^^^
     6 |     
     7 |     print(node, spawn, if);
-[ERROR] Error: error[E0004]: Unexpected token in expression: ','
+✖ Error: error[E0004]: Unexpected token in expression: ','
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:7:22
     5 |     if = True;
     6 |     
@@ -70,7 +70,7 @@
       |                      ^
     8 | }
     9 | 
-[ERROR] Error: error[E0004]: Unexpected token in expression: ')'
+✖ Error: error[E0004]: Unexpected token in expression: ')'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:7:26
     5 |     if = True;
     6 |     
@@ -78,7 +78,7 @@
       |                          ^
     8 | }
     9 | 
-[ERROR] Error: error[E0001]: Expected 'else', got ';'
+✖ Error: error[E0001]: Expected 'else', got ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:7:27
     5 |     if = True;
     6 |     
@@ -86,32 +86,32 @@
       |                           ^
     8 | }
     9 | 
-[ERROR] Error: error[E0004]: Unexpected token in expression: '}'
+✖ Error: error[E0004]: Unexpected token in expression: '}'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:8:1
     6 |     
     7 |     print(node, spawn, if);
     8 | }
       | ^
     9 | 
-[ERROR] Error: error[E0002]: Missing ')'
+✖ Error: error[E0002]: Missing ')'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:9:1
     7 |     print(node, spawn, if);
     8 | }
     9 | 
       | ^
-[ERROR] Error: error[E0002]: Missing ';'
+✖ Error: error[E0002]: Missing ';'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:9:1
     7 |     print(node, spawn, if);
     8 | }
     9 | 
       | ^
-[ERROR] Error: error[E0002]: Missing '}'
+✖ Error: error[E0002]: Missing '}'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:9:1
     7 |     print(node, spawn, if);
     8 | }
     9 | 
       | ^
-[ERROR] Error: error[E0002]: Missing '}'
+✖ Error: error[E0002]: Missing '}'
   --> /home/denis/Jaseci/jac-tests/language_basics/test_05_keywords.jac:9:1
     7 |     print(node, spawn, if);
     8 | }

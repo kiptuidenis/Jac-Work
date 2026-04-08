@@ -1,0 +1,10 @@
+✖ Error: Error: cannot access local variable 'DEBUG' where it is not associated with a value
+    6 |     # 1. Implicit global: Modifying a glob without the 'global' keyword
+    7 |     # Python-style: Should throw a local variable error
+    8 |     DEBUG = not DEBUG;
+      |                 ^^^^^
+    9 |     print(f"Debug is: {DEBUG}");
+   10 | }
+  at toggle_debug() /home/denis/Jaseci/jac-tests/variables_and_scope/test_03_global_variables.jac:8
+  at <module> /home/denis/Jaseci/jac-tests/variables_and_scope/test_03_global_variables.jac:20
+  ... [internal runtime calls]

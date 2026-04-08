@@ -1,0 +1,5 @@
+✖ Error: Error: The 'by' operator is not yet implemented. This feature is reserved for future use.
+
+  ... [internal runtime calls]
+  at <module> /home/denis/Jaseci/jac-tests/operators/test_05_delegation.jac:17
+  ... [internal runtime calls]
