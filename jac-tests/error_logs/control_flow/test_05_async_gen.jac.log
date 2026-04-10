@@ -1,13 +1,18 @@
 ✖ Error: error[E0005]: Unexpected token 'yield'
-  --> /home/denis/Jaseci/jac-tests/control_flow/test_05_async_gen.jac:4:1
+  --> 
+/home/denis/Jaseci/jac-tests/control_flow/test_05_async_
+gen.jac:4:1
     2 | 
     3 | # 1. Top-level yield (Forbidden)
     4 | yield 10; # Error: yield outside of function
       | ^^^^^
     5 | 
     6 | def sync_func() {
-✖ Error: error[E0030]: Unexpected semicolon at module level
-  --> /home/denis/Jaseci/jac-tests/control_flow/test_05_async_gen.jac:4:9
+✖ Error: error[E0030]: Unexpected semicolon at module 
+level
+  --> 
+/home/denis/Jaseci/jac-tests/control_flow/test_05_async_
+gen.jac:4:9
     2 | 
     3 | # 1. Top-level yield (Forbidden)
     4 | yield 10; # Error: yield outside of function

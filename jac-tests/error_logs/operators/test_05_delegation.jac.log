@@ -1,5 +1,19 @@
-✖ Error: Error: The 'by' operator is not yet implemented. This feature is reserved for future use.
-
-  ... [internal runtime calls]
-  at <module> /home/denis/Jaseci/jac-tests/operators/test_05_delegation.jac:17
-  ... [internal runtime calls]
+✖ Error: Error: The 'by' operator requires visitable 
+nodes on the left and an LLM model on the right.
+  117 |             return 
+JacByLLM.filter_visitable_by(lhs_list, rhs);
+  118 |         }
+  119 |         raise NotImplementedError(
+      |         ^^
+  120 |             "The 'by' operator requires 
+visitable nodes on the left and an LLM model on the 
+right."
+  121 |         );
+  at by_operator() 
+/home/denis/.local/share/uv/tools/jaclang/lib/python3.12
+/site-packages/byllm/plugin.jac:119
+  ... 
+  at <module> 
+/home/denis/Jaseci/jac-tests/operators/test_05_delegatio
+n.jac:17
+  ... 

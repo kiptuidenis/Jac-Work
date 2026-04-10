@@ -1,0 +1,44 @@
+✖ Error: error[E0002]: Missing '}'
+  --> 
+/home/denis/Jaseci/jac-tests/native/test_03_annexing.na.
+jac:6:9
+    4 | # Import the ability from the Python side 
+(documented at line 5654)
+    5 | import from ... test_03_annexing {
+    6 |     def python_compute(x: int) -> int;
+      |         ^^^^^^^^^^^^^^
+    7 | }
+    8 | 
+✖ Error: error[E0005]: Unexpected token 'python_compute'
+  --> 
+/home/denis/Jaseci/jac-tests/native/test_03_annexing.na.
+jac:6:9
+    4 | # Import the ability from the Python side 
+(documented at line 5654)
+    5 | import from ... test_03_annexing {
+    6 |     def python_compute(x: int) -> int;
+      |         ^^^^^^^^^^^^^^
+    7 | }
+    8 | 
+✖ Error: error[E0030]: Unexpected semicolon at module 
+level
+  --> 
+/home/denis/Jaseci/jac-tests/native/test_03_annexing.na.
+jac:6:38
+    4 | # Import the ability from the Python side 
+(documented at line 5654)
+    5 | import from ... test_03_annexing {
+    6 |     def python_compute(x: int) -> int;
+      |                                      ^
+    7 | }
+    8 | 
+✖ Error: error[E0005]: Unexpected token '}'
+  --> 
+/home/denis/Jaseci/jac-tests/native/test_03_annexing.na.
+jac:7:1
+    5 | import from ... test_03_annexing {
+    6 |     def python_compute(x: int) -> int;
+    7 | }
+      | ^
+    8 | 
+    9 | def native_compute(x: int) -> int {

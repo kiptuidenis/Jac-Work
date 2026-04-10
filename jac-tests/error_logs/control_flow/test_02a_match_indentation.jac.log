@@ -1,0 +1,32 @@
+✖ Error: error[E0002]: Missing '}'
+  --> 
+/home/denis/Jaseci/jac-tests/control_flow/test_02a_match
+_indentation.jac:8:25
+    6 |             # ✖ ERROR: Braces are NOT allowed in
+match/case bodies.
+    7 |             # This triggers a parser panic.
+    8 |             print("One"); 
+      |                         ^
+    9 |         }
+   10 |         case 2:
+✖ Error: error[E0032]: Unexpected 'case' -- must follow 
+its parent statement (if/try/match/switch)
+  --> 
+/home/denis/Jaseci/jac-tests/control_flow/test_02a_match
+_indentation.jac:10:9
+    8 |             print("One"); 
+    9 |         }
+   10 |         case 2:
+      |         ^^^^
+   11 |             print("Two");
+   12 |     }
+✖ Error: error[E0005]: Unexpected token '}'
+  --> 
+/home/denis/Jaseci/jac-tests/control_flow/test_02a_match
+_indentation.jac:13:1
+   11 |             print("Two");
+   12 |     }
+   13 | }
+      | ^
+   14 | 
+   15 | with entry {

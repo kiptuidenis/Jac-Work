@@ -1,9 +1,13 @@
-✖ Error: Error: unsupported operand type(s) for +: 'function' and 'int'
-   16 |     # Logic: 5 |> (double + 1) -> should FAIL as double is a function
+✖ Error: Error: unsupported operand type(s) for +: 
+'function' and 'int'
+   16 |     # Logic: 5 |> (double + 1) -> should FAIL as
+double is a function
    17 |     
    18 |     result = 5 |> double + 1; 
       |                   ^^^^^^^^^^
    19 |     print(result);
    20 |     
-  at <module> /home/denis/Jaseci/jac-tests/operators/test_06_precedence.jac:18
-  ... [internal runtime calls]
+  at <module> 
+/home/denis/Jaseci/jac-tests/operators/test_06_precedenc
+e.jac:18
+  ... 

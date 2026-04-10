@@ -1,0 +1,7 @@
+Compiling native/test_05_standalone.na.jac to native 
+binary...
+  LLVM IR generated successfully.
+  Target: x86_64-unknown-linux-gnu
+  Object code emitted (3016 bytes).
+  Binary written to test_05_standalone (4400 bytes).
+  Run with: ./test_05_standalone
