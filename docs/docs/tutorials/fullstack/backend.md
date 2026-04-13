@@ -164,7 +164,7 @@ def:pub TaskList() -> JsxElement {
 | Property | Type | Description |
 |----------|------|-------------|
 | `result.reports` | list | Array of reported values from walker |
-| `result.reports[0]` | any | First reported value (most common) |
+| `result.reports[0]` | Any | First reported value (most common) |
 
 ---
 
@@ -313,7 +313,7 @@ def:pub SafeSubmit() -> JsxElement {
 to cl:
 
 def:pub DataView() -> JsxElement {
-    has data: any = None;
+    has data: Any = None;
     has loading: bool = True;
     has error: str = "";
 
@@ -368,7 +368,7 @@ to cl:
 import from react { useEffect }
 
 def:pub LiveData() -> JsxElement {
-    has data: any = None;
+    has data: Any = None;
     has loading: bool = True;
 
     async def fetch_data() -> None {
